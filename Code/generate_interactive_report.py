@@ -213,7 +213,7 @@ fig_monthly_types.add_annotation(
     font=dict(size=10),
 )
 fig_monthly_types.update_layout(
-    title=dict(text="Monthly event trends by event type (2018-2025)", x=0.02, xref="paper", xanchor="left"),
+    title=dict(text="Monthly Event Trends By Event Type (2018-2025)", x=0.02, xref="paper", xanchor="left"),
     template="plotly_white",
     height=570,
     hovermode="x unified",
@@ -310,7 +310,7 @@ for year in bubble_years:
     )
 
 fig_monthly_bubbles.update_layout(
-    title=dict(text="Monthly event trends bubble map by year", x=0.02, xref="paper", xanchor="left"),
+    title=dict(text="Monthly Event Trends Bubble Map By Year", x=0.02, xref="paper", xanchor="left"),
     xaxis_title="Month",
     yaxis_title="Event type",
     xaxis=dict(tickformat="%b", dtick="M1"),
@@ -386,7 +386,7 @@ for event_type in event_type_order:
         )
     )
 fig_event_types.update_layout(
-    title=dict(text="Event-type distribution by year (2018-2025)", x=0.02, xref="paper", xanchor="left"),
+    title=dict(text="Event-Type Distribution By Year (2018-2025)", x=0.02, xref="paper", xanchor="left"),
     template="plotly_white",
     height=850,
     legend=dict(orientation="h", y=-0.06, x=0.5, xanchor="center", font=dict(size=10)),
@@ -490,7 +490,7 @@ for period in ["2021 Dispute", "2022 Dispute"]:
         )
     )
 fig_map.update_layout(
-    title=dict(text="Conflict hotspot map: 2021 and 2022 escalation geography", x=0.02, xref="paper", xanchor="left"),
+    title=dict(text="Conflict Hotspot Map: 2021 And 2022 Escalation Geography", x=0.02, xref="paper", xanchor="left"),
     mapbox=dict(style="carto-positron", center=dict(lat=39.88, lon=70.58), zoom=7.92),
     height=720,
     margin=dict(t=70, r=20, b=20, l=20),
@@ -504,7 +504,7 @@ if _border_geo_main is not None:
     if add_kg_tj_choropleth(fo, _border_geo_main):
         fo.update_layout(
             title=dict(
-                text="Static overview: Kyrgyzstan and Tajikistan (parties along the disputed border)",
+                text="Static Overview: Kyrgyzstan And Tajikistan (Parties Along The Disputed Border)",
                 x=0.02,
                 xref="paper",
                 xanchor="left",
@@ -706,7 +706,7 @@ fig_dual.add_trace(
     secondary_y=True,
 )
 fig_dual.update_layout(
-    title=dict(text="Dual-axis timeline: Events and Fatalities (2018-2025)", x=0.02, xref="paper", xanchor="left"),
+    title=dict(text="Dual-Axis Timeline: Events And Fatalities (2018-2025)", x=0.02, xref="paper", xanchor="left"),
     xaxis=dict(title="Year", rangeslider=dict(visible=True), range=["2018-01-01", "2025-12-31"]),
     yaxis=dict(title="Events"),
     yaxis2=dict(title="Fatalities"),
@@ -744,7 +744,7 @@ fig_forecast.add_vrect(x0="2026-01-01", x1="2030-12-31", fillcolor="rgba(123, 97
 fig_forecast.add_vline(x="2023-01-01", line_dash="dot", line_color="rgba(0,0,0,0.4)")
 fig_forecast.add_vline(x="2026-01-01", line_dash="dot", line_color="rgba(0,0,0,0.4)")
 fig_forecast.update_layout(
-    title=dict(text="Observed Trends and Rolling-Mean Projections of Conflict (2018-2030)", x=0.02, xref="paper", xanchor="left", y=0.98),
+    title=dict(text="Observed Trends And Rolling-Mean Projections Of Conflict (2018-2030)", x=0.02, xref="paper", xanchor="left", y=0.98),
     xaxis_title="Year",
     yaxis_title="Events",
     xaxis=dict(rangeslider=dict(visible=True), range=["2018-01-01", "2030-12-31"], tickformat="%Y", dtick="M12"),
